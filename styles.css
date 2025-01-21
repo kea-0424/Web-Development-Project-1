@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.header {
+    text-align: center;
+    background-image:url('Images/valentina-jorio-kfcKlY8KoXo-unsplash.jpg');
+    background-size:inherit;
+    background-position: center; 
+    padding: 50px 20px;
+}
+
+.header h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+.header h3 {
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+}
+
+.shop-now-btn {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.shop-now-btn:hover {
+    background-color: rgb(119, 119, 119);
+}
+
+.featured-products {
+    padding: 20px;
+    text-align: center;
+}
+
+.featured-products h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.products-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.product {
+    width: 200px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: white;
+}
+
+.product img {
+    width: 100%;
+    height: 80%;
+}
+
+.product h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.product p {
+    font-size: 16px;
+    color: #333;
+}
+
+.standards {
+    background-color: #002147;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 40px;
+}
+
+.standards p {
+    font-size: 16px;
+    margin: 0 0 20px;
+}
+
+.standards-icons {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.standards-icons div {
+    text-align: center;
+}
+
+.standards-icons img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.standards-icons p {
+    font-size: 14px;
+}
