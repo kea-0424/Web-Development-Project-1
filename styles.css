@@ -5,8 +5,8 @@ body {
 
 .header {
     text-align: center;
-    background-image:url('Images/valentina-jorio-kfcKlY8KoXo-unsplash.jpg');
-    background-size:inherit;
+    background-image: url('Images/valentina-jorio-kfcKlY8KoXo-unsplash.jpg');
+    background-size: 100%; 
     background-position: center; 
     padding: 50px 20px;
 }
@@ -61,6 +61,7 @@ body {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
     background-color: white;
+    text-align: left;
 }
 
 .product img {
@@ -110,3 +111,4 @@ body {
 .standards-icons p {
     font-size: 14px;
 }
+
