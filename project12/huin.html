@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #f9f9f9;
+        }
+
+        .category-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .category {
+            position: relative;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .category img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .category h2, 
+        .category a {
+            position: absolute;
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        .category h2 {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .category a {
+            bottom: 10%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .best-diamond {
+            margin-top: 40px;
+        }
+
+        .diamond-items {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .diamond-item img {
+            max-width: 80px;
+            height: auto;
+        }
+
+        .header-images {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .header-images img {
+            max-width: 100px;
+            height: auto;
+        }
+
+        h1 {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+    
+
+    <h1>Product Category</h1>
+
+    
+    <div class="category-container">
+        <div class="category">
+            <img src="rBVaE2JcMjuAEbmqAAqMxIP4cNU068.webp" alt="Earrings">
+            <h2>Earrings</h2>
+            <a href="#">Explore Now</a>
+        </div>
+        <div class="category">
+            <img src="s-l400.jpg" alt="Neckwear">
+            <h2>Neckwear</h2>
+            <a href="#">Explore Now</a>
+        </div>
+        <div class="category">
+            <img src="514ZciL+L6L._AC_UY1000_.jpg" alt="Rings">
+            <h2>Rings</h2>
+            <a href="#">Explore Now</a>
+        </div>
+        <div class="category">
+            <img src="51KpB+gWjnL - Copy.jpg" alt="Bracelets">
+            <h2>Bracelets</h2>
+            <a href="#">Explore Now</a>
+        </div>
+    </div>
+
+    
+    <div class="best-diamond">
+        <h2>Best Diamond That You Loved</h2>
+        <div class="diamond-items">
+            <div class="diamond-item">
+                <img src="9e2e444a-2488-4bba-b843-4aabf4793e6f - Copy.jpg" alt="Solitaire Ring">
+                <p>Solitaire Rings</p>
+            </div>
+            <div class="diamond-item">
+                <img src="41tlZEZc9DL._AC_SL1000_.jpg" alt="Tennis Bracelet">
+                <p>Tennis Bracelets</p>
+            </div>
+            <div class="diamond-item">
+                <img src="392736C01_RGB.jpg" alt="Necklace">
+                <p>Necklaces</p>
+            </div>
+            <div class="diamond-item">
+                <img src="SLLR00020-6__1560611403_721.jpg" alt="Eternity Ring">
+                <p>Eternity Rings</p>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
