@@ -34,8 +34,12 @@ body {
 
 .shop-now-btn:hover {
     background-color: rgb(119, 119, 119);
+    
 }
-
+.shop-now-btn i {
+    rotate: 320deg;
+    font-size: 18px;
+}
 .featured-products {
     padding: 20px;
     text-align: center;
@@ -44,6 +48,10 @@ body {
 .featured-products h2 {
     font-size: 28px;
     margin-bottom: 20px;
+}
+.featured-products i{
+    position: right;
+    display: inline-flex;
 }
 
 .products-container {
@@ -78,6 +86,10 @@ body {
     font-size: 16px;
     color: #333;
 }
+/* .product i {
+
+} */
+
 
 .standards {
     background-color: #002147;
@@ -88,12 +100,16 @@ body {
 }
 
 .standards p {
+    align-content: left;
+    display: inline-block;
     font-size: 16px;
     margin: 0 0 20px;
+    
 }
 
 .standards-icons {
-    display: flex;
+    
+    display: inline-flex;
     justify-content: center;
     gap: 40px;
 }
