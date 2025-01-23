@@ -1,0 +1,225 @@
+
+body {
+    box-sizing: border-box;
+}
+.notification {
+    background-color: rgb(0 0 117);
+    color: rgb(255 255 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: smaller;
+    width: inherit;
+    height: 20px;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    /*padding: 10px;*/
+}
+.main_logo {
+    height: 80px;
+    width: 100px;
+    margin-top: 0;
+
+}
+#Nav_logo {
+    margin: 0 auto;
+    position: absolute;
+    left: 40%;
+}
+.navigations,.navbar_links {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;  
+list-style: none;
+text-decoration: none;
+color: inherit;
+margin-right: 15px;
+padding: 0;
+}
+nav {
+    position:relative;
+    width: 100%;
+    height: 60px
+}
+
+a {
+    text-decoration: none;
+color: inherit;
+}
+a:hover {
+    /*font-size: larger;*/
+    transition: font-size 0.2s ease-in-out;
+    position: relative;
+    /*background-color: blue;*/
+    color: rgba(0 0 255 / 0.26);
+    border-radius: 3px;
+}
+main,.No_Content {
+    width: 100%;
+    height: 800px;
+}
+.searchbar {
+    width: 120px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-top: 18px;
+    padding-left: 25px;
+    position: absolute;
+    bottom: 1px;
+}
+.searchbar_container{
+/*border: 1px solid red;*/
+    width: 120px;
+    height: 30px;
+    position: relative;
+    left: 300px;
+    top: 20px;
+}
+.searchbar_icon{
+    position: absolute;
+    z-index: 1;
+    margin-left: 7px;
+    opacity: 0.5;
+    height: 17px;
+    width: 17px;
+    top: 5px;
+}
+.navbar_links {
+    margin-top: 10px;
+}
+.icon {
+    width: 25px;
+    height: 25px;
+    margin-top: 22px;
+}
+#left_nav{
+    position: absolute;
+    right: 220px;
+}
+#right_nav {
+    position: absolute;
+    left: 30px;
+}
+.nav_icons {
+    margin-right: 20px;
+}
+.socials1, .socials2, .socials3 {
+   /*border: 1px solid red;*/
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    background-color: black;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.bio {
+    /*border: 1px solid red;*/
+    display: inline-block;
+}
+#facebook_link{
+    height: 20px;
+    width: 20px;
+    padding: 3px;
+}
+#instagram_link {
+    height: 20px;
+    width: 20px;
+}
+#X_link {
+    height: 20px;
+    width: 20px;
+    display: inline-block
+}
+/*.list1,.list2,.list3*/.navigation{
+    /*border: 1px solid red;*/
+    display: inline-block;
+    position: absolute;
+    left: 320px;
+    top: 20px;
+box-sizing: border-box;
+}
+footer {
+    /*border: 1px solid red;*/
+    position: relative;
+}
+.list1,.list2,.list3 {
+    /*border: 1px solid red;*/
+    display: inline-block;
+    box-sizing: border-box;
+    margin-right: 5px;
+}
+.list3 {
+    position: relative;
+    bottom: 32px;
+}
+.footer_lists {
+    position: relative;
+    right: 40px;
+    list-style: none;
+    line-height: 2em;
+}
+.input_container{
+    /*border: 1px solid red;*/
+    display: inline;
+    height: 33px;
+    position: relative;
+    border-radius: 5px;
+    z-index: 1
+}
+.newsletter_input {
+    height: 30px;
+    overflow: hidden;
+    border-radius: 5px;
+    border: 1px solid rgba(0 0 0 / 0.25);
+    /*z-index: 1;*/
+}
+.submit_btn {
+    background-color: rgb(2 2 59);
+    border: 1px solid transparent;
+    height: 34px;
+    width: 35px;
+    position: absolute;
+right: 1px;
+    border-radius:0px 5px 5px 0px;
+}
+#visa, #mastercard, #paypal, #skrill {
+    height: 40px;
+    width: 40px;
+}
+#visa:hover, #mastercard:hover, #paypal:hover, #skrill:hover {
+    height: 50px;
+    width: 50px;
+}
+.payment_method {
+    /*border: 1px solid red;*/
+    display: inline-block;
+    position: relative;
+    bottom: 8px;
+}
+.Subscription {
+/*border: 1px solid red;*/
+display: inline;
+position: absolute;
+left: 700px;
+top:18px;
+}
+hr {
+    margin-top: 40px;
+}
+.copyright {
+   /* border: 1px solid red;*/
+    position: relative;
+}
+.left_details {
+    /*border: 1px solid red;*/
+    display: inline-block;
+}
+.right_details {
+    /*border: 1px solid red;*/
+    display: inline;
+    position: absolute;
+    right: 10px;
+}
