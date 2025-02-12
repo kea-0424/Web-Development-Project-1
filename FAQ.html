@@ -1,0 +1,197 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ page</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            padding: 40px;
+        }
+
+        .faq-container {
+    max-width: 800px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+        .faq-title {
+            font-size: 36px;
+            font-weight: bold;
+            color: #333;
+            padding-left: 45%;
+        }
+
+    .sub-heading {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+    .line {
+            flex: 1;
+            height: 2px;
+            background-color: #9b5de5; 
+            margin: 0 10px;
+           
+        }
+
+    .text {
+            font-size: 30px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .faq-header {
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .faq-item {
+            border-bottom: 2px solid #9b5de5; 
+        }
+
+        .faq-question {
+            background: none;
+            border: none;
+            width: 100%;
+            text-align: left;
+            padding: 15px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #000000;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            outline: none;
+        }
+
+        .faq-answer {
+            display: none;
+            padding: 15px;
+            font-size: 16px;
+            color: #9b5de5;
+        }
+
+        .icon {
+            transition: transform 0.3s ease;
+        }
+
+        .faq-item.active .icon {
+            transform: rotate(180deg);
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="faq-container">
+        <h1 class="faq-title">FAQ</h1>
+    
+        <div class="sub-heading">
+            <div class="line"></div>
+            <h1 class="text">General information</h1>
+            <div class="line"></div>
+        </div>
+
+        <p class="faq-header">Frequently asked questions mainly relating to opening hours and location information.</p>
+
+        <div class="faq-item">
+            <button class="faq-question">
+                Where is the National Portrait Gallery?
+                <span class="icon">▼</span>
+            </button>
+            <div class="faq-answer">
+                The National Portrait Gallery is located at XYZ Street, City.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">
+                How do I get to the National Portrait Gallery?
+                <span class="icon">▼</span>
+            </button>
+            <div class="faq-answer">
+                You can reach the gallery by subway, bus, or taxi. The nearest station is ABC.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">
+                What are the Gallery’s opening hours?
+                <span class="icon">▼</span>
+            </button>
+            <div class="faq-answer">
+                The gallery is open from 10 AM to 6 PM, Monday to Sunday.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">
+                Is photography allowed in the Gallery?
+                <span class="icon">▼</span>
+            </button>
+            <div class="faq-answer">
+                Photography is allowed in certain areas but not in special exhibitions.
+            </div>
+        </div>
+
+
+        <div class="faq-item">
+            <button class="faq-question">
+                Who can I contact about lost property?
+                <span class="icon">▼</span>
+            </button>
+            <div class="faq-answer">
+                You can email the gallery at nationalportraitgallery@gmail.com .
+            </div>
+        </div>
+
+
+        <div class="faq-item">
+            <button class="faq-question">
+                Can I sketch in the Gallery?
+                <span class="icon">▼</span>
+            </button>
+            <div class="faq-answer">
+                Sketching is permited in certain sections of the gallery.
+            </div>
+        </div>
+
+
+        <div class="faq-item">
+            <button class="faq-question">
+                How can I exhibit my art in your Gallery?
+                <span class="icon">▼</span>
+            </button>
+            <div class="faq-answer">
+                 You can submit your art pieces and your contact details at nationalportraitgallery@gmail.com.
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        document.querySelectorAll(".faq-question").forEach(button => {
+            button.addEventListener("click", () => {
+                const faqItem = button.parentElement;
+                
+                faqItem.classList.toggle("active");
+            });
+        });
+    </script>
+
+</body>
+</html>
