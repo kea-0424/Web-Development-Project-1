@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jewelry Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            text-align: center;
+        }
+
+        header.vilian {
+  position: relative;
+  width: 100%;
+  height: 500px; /* Adjust height as needed */
+  overflow: hidden;
+}
+
+header.vilian .img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+header.vilian .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the entire section */
+  display: block;
+}
+
+header.vilian .hero { 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  background:transparent; /* Dark overlay for better readability */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+header.vilian .hero h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+header.vilian .hero button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background: #e67e22;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+header.vilian .hero button:hover {
+  background: #d35400;
+}
+
+
+        /* .hero {
+            background-size: cover;
+            width: 100%; 
+            height: 80vh; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+
+
+        .hero button {
+            background-color: transparent;
+            border: solid 1px white;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            color: white;
+            margin-top: 10px;
+        } */
+
+        .categories, .featured, .latest-blog {
+            padding: 20px;
+        }
+
+        .category-list, .product-list, .blog-list {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .category, .product, .blog-post {
+            background: white;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .category:hover, .product:hover, .blog-post:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <header class="vilian">
+        <div class="img">
+        <img src="Images/watch2.jpg" alt="Error404">
+        <div class="hero">
+        <h1>Precision Timepieces for <br> The Discerning Collector</h1>
+        <button onclick="openWatchSection()">Open Watch Section</button>
+      </div>
+      </div>
+    </header>
+    
+    <section class="categories">
+        <h2>Browse Our Categories</h2>
+        <div class="category-list">
+            <div class="category">Rings</div>
+            <div class="category">Earrings</div>
+            <div class="category">Bracelets</div>
+            <div class="category">Necklaces</div>
+            <div class="category">Watches</div>
+        </div>
+    </section>
+    
+    <section class="featured">
+        <h2>Beauty at Its Finest</h2>
+        <div class="product-list">
+            <div class="product">Diamond Bracelet</div>
+            <div class="product">Gold Necklace</div>
+        </div>
+    </section>
+    
+    <section class="latest-blog">
+        <h2>Latest Blog Posts</h2>
+        <div class="blog-list">
+            <div class="blog-post">Luxury Watch Guide</div>
+            <div class="blog-post">Trendy Jewelry Styles</div>
+        </div>
+    </section>
+    
+    <script>
+        function openWatchSection() {
+            alert("Navigating to the Watches section...");
+        }
+    </script>
+</body>
+</html>                      

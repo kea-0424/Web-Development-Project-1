@@ -9,14 +9,31 @@ body {
 header {
     text-align: center;
     height: 100%;
-    background-image: url('Images/bg1.jpg');
-    background-size: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
     padding: 20px;
-  
+  }
+  .squel {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  button {
+    background-color: transparent;
+  }
+
+.img{
+    position: relative;
+    width: 100%;
+    height: 500px;
 
 }
+   .img img{
+    height: 500px;
+    width: 100%;
+    background-repeat: no-repeat;
+    object-fit: cover;
+   }
 
 header h1 {
     margin: 0;
@@ -24,7 +41,7 @@ header h1 {
 }
 
 header p {
-    color: #555;
+    color: #000000;
 }
 
 .hero {
@@ -69,17 +86,6 @@ header p {
     border-radius: 10px;
 }
 
-.featured {
-    padding: 50px 20px;
-    text-align: center;
-    width: 50%;
-    height: inherit;
-}
-
-.featured img {
-    max-width: 100%;
-    border-radius: 10px;
-}
 
 .new-arrivals {
     padding: 20px;
@@ -91,9 +97,28 @@ header p {
 }
 
 .products {
+    display: flex;
+    height: 20rem;
+    gap: 1rem;
+}
+
+.products div {
+    flex: 1;
+    border-radius: 1rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
+}
+
+.products div:hover {
+    flex: 5;
+}
+
+/* .products {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
+    gap: 30px;
 }
 
 .product {
@@ -106,9 +131,13 @@ header p {
 .product img {
     max-width: 50%;
     border-radius: 10px;
+    object-fit: cover;
+    height: 80%;
+    width: 100%;
     
 }
 
 .product p {
     margin: 10px 0 0;
-}
+    font-size: 20px;
+} */
